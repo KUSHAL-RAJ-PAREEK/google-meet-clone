@@ -21,7 +21,7 @@ const useMediaStream = () =>{
             }
         })()
 },[])
-
+    
     return {
       stream: state
     }

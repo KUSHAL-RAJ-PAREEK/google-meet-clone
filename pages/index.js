@@ -14,7 +14,7 @@ export default function Home() {
     router.push(`/${roomId}`)
   }
  const joinRoom = () =>{
-      if(roomId) router.push('/$roomId')
+      if(roomId) router.push(`/${roomId}`)
      else{
          alert('please Provide a valid roomId')
       }
