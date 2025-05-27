@@ -1,10 +1,16 @@
 import ReactPlayer from "react-player";
-
+import cx from 'classnames'
+import styles from "@/styles/index.module.css";
 const Player = (props) =>{
-    const {url,muted,playing} = props;
+    const {url,muted,playing,isActive} = props;
     return (
-        <div>
-            <ReactPlayer url = {url} muted={muted} playing={playing}/>
+        <div className={cx(styles.playerContainer,{
+        [styles.notActive]: !isActive,
+        [styles.active]: isActive}
+            )}>
+            <ReactPlayer url = {url} muted={muted} playing={playing}
+                         width = "100%"
+            height = "100%"/>
         </div>
     )
 }

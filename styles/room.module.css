@@ -1,4 +1,4 @@
-.activePlayerContainer{
+.activePlayerContainer {
     @apply absolute w-9/12 left-0 right-0 mx-auto;
     top: 20px;
     bottom: 50px;
