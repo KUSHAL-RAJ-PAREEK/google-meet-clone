@@ -13,6 +13,7 @@
     "classnames": "^2.5.1",
     "crypto-browserify": "^3.12.1",
     "lodash": "^4.17.21",
+    "lucide-react": "^0.511.0",
     "next": "13.5.11",
     "next-transpile-modules": "^10.0.1",
     "peerjs": "^1.5.4",
