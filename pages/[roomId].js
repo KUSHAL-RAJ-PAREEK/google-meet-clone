@@ -10,7 +10,8 @@ import {useRouter} from "next/router";
 import Bottom from "@/component/Bottom";
 import {log} from "next/dist/server/typescript/utils";
 import {cloneDeep} from "lodash";
-
+import copySection from "@/component/CopySection";
+import CopySection from "@/component/CopySection";
 const Room = () => {
     const socket = useSocket();
     const {roomId} = useRouter().query;
@@ -163,6 +164,7 @@ const Room = () => {
                     );
                 })}
             </div>
+            <CopySection roomId = {roomId}/>
             {playerHighlighted && (
                 <Bottom
                     muted={playerHighlighted.muted}
